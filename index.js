@@ -9,10 +9,28 @@ $(document).ready(function () {
             }
         }
         if(array.length < 10){
-            alert('Вы не ответили на все вопросы!');
+            alert('Вы не ответили на все вопросы!!!')
         } else if(!$('#vkId')[0].value || isNaN(+$('#vkId')[0].value)){
             alert('id Вконтакте должно быть заполнено и состоять только из цифр!');
+        } else {
+            fetch('https://immense-sierra-97794.herokuapp.com/',
+            {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    answers: array,
+                    id: $('#vkId')[0].value
+                })
+            })
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (res) {
+                console.log(res);
+            });
         }
-        console.log(array, + $('#vkId')[0].value)
     });
 });

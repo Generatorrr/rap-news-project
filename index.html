@@ -4,92 +4,350 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Anton" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Rap News Tournament</h1>
-        <div class="questionOne question">
-            <p><b>Как зовут лысого из Касты</b></p>
-            <p><input name="question1" type="radio" id="q1-1">Стас</p>
-            <p><input name="question1" type="radio" id="q1-2">Дима</p>
-            <p><input name="question1" type="radio" id="q1-3">Сергей</p>
-            <p><input name="question1" type="radio" id="q1-4">Влад</p>
+    <h1>Rap News Tournament</h1>
+    <div class="container">
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question1" type="radio" id="q1-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question1" type="radio" id="q1-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question1" type="radio" id="q1-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question1" type="radio" id="q1-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="questionTwo question">
-            <p><b>Кому принадлежит фраза "Еее, бой!!!)"</b></p>
-            <p><input name="question2" type="radio" id="q2-1">Птаха</p>
-            <p><input name="question2" type="radio" id="q2-2">Баста</p>
-            <p><input name="question2" type="radio" id="q2-3">Оби Ван</p>
-            <p><input name="question2" type="radio" id="q2-4">Гнойный</p>
-        </div>
-        <div class="questionTree question">
-            <p><b>С кем батлился Окси в Америке?</b></p>
-            <p><input name="question3" type="radio" id="q3-1">Гуф</p>
-            <p><input name="question3" type="radio" id="q3-2">Джонибой</p>
-            <p><input name="question3" type="radio" id="q3-3">Дизастер</p>
-            <p><input name="question3" type="radio" id="q3-4">Гнойный</p>
-        </div>
-        <div class="questionFour question">
-            <p><b>2+2*2</b></p>
-            <p><input name="question4" type="radio" id="q4-1">6</p>
-            <p><input name="question4" type="radio" id="q4-2">8</p>
-            <p><input name="question4" type="radio" id="q4-3">10</p>
-            <p><input name="question4" type="radio" id="q4-4">12</p>
-        </div>
-        <div class="questionFive question">
-            <p><b>25/17?</b></p>
-            <p><input name="question5" type="radio" id="q5-1">Гуф и Птаха</p>
-            <p><input name="question5" type="radio" id="q5-2">Витя и Максим</p>
-            <p><input name="question5" type="radio" id="q5-3">Ант и Бледный</p>
-            <p><input name="question5" type="radio" id="q5-4">Шок и Окси</p>
-        </div>
-        <div class="questionSix question">
-            <p><b>Кто победил Витю Классика в финале индабаттла?</b></p>
-            <p><input name="question6" type="radio" id="q6-1">Птаха</p>
-            <p><input name="question6" type="radio" id="q6-2">Баста</p>
-            <p><input name="question6" type="radio" id="q6-3">Саша Скул</p>
-            <p><input name="question6" type="radio" id="q6-4">Джонибой</p>
-        </div>
-        <div class="questionSeven question">
-            <p><b>Кому принадлежит фраза "Я лучше сдохну е***им ноунеймом, чем прославлюсь и стану тобой"</b></p>
-            <p><input name="question7" type="radio" id="q7-1">Птаха</p>
-            <p><input name="question7" type="radio" id="q7-2">Баста</p>
-            <p><input name="question7" type="radio" id="q7-3">Оби Ван</p>
-            <p><input name="question7" type="radio" id="q7-4">Гнойный</p>
-        </div>
-        <div class="questionEight question">
-            <p><b>11*11</b></p>
-            <p><input name="question8" type="radio" id="q8-1">123</p>
-            <p><input name="question8" type="radio" id="q8-2">321</p>
-            <p><input name="question8" type="radio" id="q8-3">121</p>
-            <p><input name="question8" type="radio" id="q8-4">144</p>
-        </div>
-        <div class="questionNine question">
-            <p><b>Кому принадлежит фраза "Порхай как бабочка, жаль, что ты - лох"</b></p>
-            <p><input name="question9" type="radio" id="q9-1">Птаха</p>
-            <p><input name="question9" type="radio" id="q9-2">Баста</p>
-            <p><input name="question9" type="radio" id="q9-3">Оби Ван</p>
-            <p><input name="question9" type="radio" id="q9-4">Витя Классик</p>
-        </div>
-        <div class="questionTen question">
-            <p><b>Кто взял второй фрешблад?</b></p>
-            <p><input name="question10" type="radio" id="q10-1">Алфавит</p>
-            <p><input name="question10" type="radio" id="q10-2">Хип Хоп одинокой старухи</p>
-            <p><input name="question10" type="radio" id="q10-3">Млечный</p>
-            <p><input name="question10" type="radio" id="q10-4">МЦ Мунстар</p>
-        </div>
-        <h2>Ваш id Вконтакте(состоящий из цифр, который был вам дан при создании страницы) <span>ОБЯЗАТЕЛЬНО</span></h2>
-        <p>Пример: 1234567</p>
-        <input id="vkId" type="text" />
         <hr>
-        <button id="submitButton" type="submit">Отправить результаты</button>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question2" type="radio" id="q2-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question2" type="radio" id="q2-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question2" type="radio" id="q2-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question2" type="radio" id="q2-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question3" type="radio" id="q3-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question3" type="radio" id="q3-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question3" type="radio" id="q3-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question3" type="radio" id="q3-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question4" type="radio" id="q4-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question4" type="radio" id="q4-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question4" type="radio" id="q4-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question4" type="radio" id="q4-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question5" type="radio" id="q5-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question5" type="radio" id="q5-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question5" type="radio" id="q5-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question5" type="radio" id="q5-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question6" type="radio" id="q6-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question6" type="radio" id="q6-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question6" type="radio" id="q6-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question6" type="radio" id="q6-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question7" type="radio" id="q7-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question7" type="radio" id="q7-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question7" type="radio" id="q7-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question7" type="radio" id="q7-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question8" type="radio" id="q8-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question8" type="radio" id="q8-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question8" type="radio" id="q8-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question8" type="radio" id="q8-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question9" type="radio" id="q9-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question9" type="radio" id="q9-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question9" type="radio" id="q9-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question9" type="radio" id="q9-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row question">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p><b>Как зовут лысого из Касты</b></p>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                    <label class="btn">
+                        <input name="question10" type="radio" id="q10-1">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Стас</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question10" type="radio" id="q10-2">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Дима</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question10" type="radio" id="q10-3">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Сергей</span>
+                    </label>
+                    <label class="btn">
+                        <input name="question10" type="radio" id="q10-4">
+                        <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i>
+                        <span>Влад</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row lastBlock">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2>Ваш id Вконтакте(состоящий из цифр, который был вам дан при создании страницы) <span style="color: red">ОБЯЗАТЕЛЬНО</span></h2>
+                <p>Пример: 1234567</p>
+                <div class="form-group">
+                    <input id="vkId" class="form-control" type="text" required/>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2">
+                <button class="btn btn-info sendResults" id="submitButton" type="submit">Отправить</button>
+            </div>
+            <div class="col-md-5"></div>
+        </div>
     </div>
 </body>
 </html>
